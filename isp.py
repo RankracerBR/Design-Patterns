@@ -1,5 +1,5 @@
 """
-Interface segregation principle
+Interface Segregation Principle
 Os clientes não devem ser forçados a depender de interfaces que não utilizam
 
 Claramente get_cpf e get_cnpj violam este princípio
