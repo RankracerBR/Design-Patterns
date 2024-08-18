@@ -1,14 +1,13 @@
 from abc import ABC, abstractmethod
 
 
-class Veiculo:
+class Veiculo(ABC):
     @abstractmethod
     def buscar_cliente(self) -> None: pass
 
 class CarroLuxo(Veiculo):
     def buscar_cliente(self) -> None:
         print("Carro de luxo está buscando o cliente...")
-
 
 class CarroPopular(Veiculo):
     def buscar_cliente(self) -> None:
@@ -18,6 +17,7 @@ class CarroPopular(Veiculo):
 class MotoLuxo(Veiculo):
     def buscar_cliente(self) -> None:
         print("Moto de luxo está buscando o cliente...")
+
 
 class MotoPopular(Veiculo):
     def buscar_cliente(self) -> None:
